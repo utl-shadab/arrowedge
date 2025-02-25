@@ -64,7 +64,7 @@ const HeroSection = () => {
               height={80} 
               className="w-12 h-12 md:w-20 md:h-20 animate-image"
             />
-            -OPENING
+            - OPENING
           </h2>
         </div>
 
