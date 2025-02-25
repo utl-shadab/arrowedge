@@ -70,7 +70,7 @@ const HeroSection = () => {
 
         {/* Line 3 */}
         <h3 className="text-4xl md:text-7xl lg:text-8xl font-extrabold animate-text flex items-center">
-          PRESENTATIONS{" "}
+          PRESENTATIONS
           <Image
             src="https://res.cloudinary.com/dynz767iy/image/upload/v1740446738/arrowedge/hero/keepgoing_ueq6on.png"
             alt="Logo"
