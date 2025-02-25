@@ -13,7 +13,7 @@ export const METADATA = {
   title: "Portfolio | Shadab Choudhary",
   description:
     "I bridge the gap between design and development. I take responsibility to craft an aesthetic user experience using modern frontend architecture.",
- 
+  siteUrl: "https://arrowedge.netlify.app/",
 };
 
 export const MENULINKS = [
