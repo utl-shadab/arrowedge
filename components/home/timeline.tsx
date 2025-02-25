@@ -359,29 +359,7 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
     }
   };
 
-  const setSlidesAnimation = (timeline: GSAPTimeline): void => {
-    svgCheckpointItems.forEach((_, index) => {
-      // all except the first slide
-      if (index !== 0) {
-        timeline.fromTo(
-          screenContainer.current.querySelector(`.slide-${index + 1}`),
-          { opacity: 0 },
-          { opacity: 1 }
-        );
-      }
 
-      // all except the last slide
-      if (index !== svgCheckpointItems.length - 1) {
-        timeline.to(
-          screenContainer.current.querySelector(`.slide-${index + 1}`),
-          {
-            opacity: 0,
-            delay: 2.35,
-          }
-        );
-      }
-    });
-  };
 
   const initScrollTrigger = (): {
     timeline: GSAPTimeline;
@@ -397,31 +375,7 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
     let end: string;
     let additionalConfig = {};
 
-    // Slide as a trigger for Desktop
-    if (isDesktop && !isSmallScreen()) {
-      // Animation for right side slides
-      setSlidesAnimation(timeline);
-
-      const platformHeight =
-        screenContainer.current.getBoundingClientRect().height;
-
-      trigger = screenContainer.current;
-      start = `top ${(window.innerHeight - platformHeight) / 2}`;
-      end = `+=${svgLength - platformHeight}`;
-      additionalConfig = {
-        pin: true,
-        pinSpacing: true,
-      };
-      duration = timeline.totalDuration() / svgCheckpointItems.length;
-    } else {
-      // Clearing out the right side on mobile devices
-      screenContainer.current.innerHTML = "";
-
-      trigger = svgContainer.current;
-      start = "top center";
-      end = `+=${svgLength}`;
-      duration = 3;
-    }
+  
 
     ScrollTrigger.create({
       ...additionalConfig,
@@ -514,9 +468,7 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
         <div className="col-span-12 md:col-span-6 line-svg" ref={svgContainer}>
           {renderSVG()}
         </div>
-        <div className="col-span-12 md:col-span-6 md:flex hidden">
-          {renderSlides()}
-        </div>
+       
       </div>
     </section>
   );
