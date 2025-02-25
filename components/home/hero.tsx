@@ -74,8 +74,8 @@ const HeroSection = () => {
           <Image
             src="https://res.cloudinary.com/dynz767iy/image/upload/v1740446738/arrowedge/hero/keepgoing_ueq6on.png"
             alt="Logo"
-            width={80} // Set width
-            height={80} // Set height
+            width={80} 
+            height={80} 
             className="w-12 h-12 md:w-20 md:h-20 animate-image"
           />
         </h3>
