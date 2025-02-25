@@ -45,7 +45,7 @@ const HeroSection = () => {
         {/* Line 1 */}
         <h1 className="text-4xl md:text-7xl lg:text-8xl font-extrabold animate-text flex items-center">
           <Image
-            src="https://res.cloudinary.com/dynz767iy/image/upload/v1740446738/arrowedge/hero/win_wgkihq.png"
+            src="/social/win.png"
             alt="Logo"
             width={80} // Set width
             height={80} // Set height
@@ -58,24 +58,24 @@ const HeroSection = () => {
         <div className="flex items-center gap-4 animate-text">
           <h2 className="text-4xl md:text-7xl lg:text-8xl font-extrabold flex items-center">
             <Image
-              src="https://res.cloudinary.com/dynz767iy/image/upload/v1740446737/arrowedge/hero/shocked_ajyqtj.png"
+              src="/social/shocked.png"
               alt="Logo"
-              width={80} 
-              height={80} 
+              width={80} // Set width
+              height={80} // Set height
               className="w-12 h-12 md:w-20 md:h-20 animate-image"
             />
-            - OPENING
+            -OPENING
           </h2>
         </div>
 
         {/* Line 3 */}
         <h3 className="text-4xl md:text-7xl lg:text-8xl font-extrabold animate-text flex items-center">
-          PRESENTATIONS
+          PRESENTATIONS{" "}
           <Image
-            src="https://res.cloudinary.com/dynz767iy/image/upload/v1740446738/arrowedge/hero/keepgoing_ueq6on.png"
+            src="/social/keepgoing.png"
             alt="Logo"
-            width={80} 
-            height={80} 
+            width={80} // Set width
+            height={80} // Set height
             className="w-12 h-12 md:w-20 md:h-20 animate-image"
           />
         </h3>

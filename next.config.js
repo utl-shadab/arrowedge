@@ -1,7 +1,12 @@
 module.exports = {
     images: {
-      domains: ["arrowedge.netlify.app"],
-      unoptimized: true, // Important for Netlify deployment
+      domains: ["res.cloudinary.com", "arrowedge.netlify.app"], // Add Cloudinary if using it
+      unoptimized: true, // Required for Netlify
+    },
+    experimental: {
+      images: {
+        layoutRaw: true, // Helps avoid Next.js image optimization issues on Netlify
+      },
     },
   };
   
