@@ -1,10 +1,19 @@
- 
+ import Khalida from "./src/assets/images/projects/khalida.png"
+ import Vardhman from "./src/assets/images/projects/vardhman.png"
+ import Reverse from "./src/assets/images/projects/reversethought.png"
+ import Resume from "./src/assets/images/projects/Resume-Builder.png"
+ import Job from "./src/assets/images/projects/Job-Portal.png"
+ import Malik from "./src/assets/images/projects/malik.png"
+ import Aym from "./src/assets/images/projects/aymsyntex.png"
+ import Nera from "./src/assets/images/projects/nerasoft.png"
+ import Nifi from "./src/assets/images/projects/nifi.png"
+ import Packmato from "./src/assets/images/projects/packmato.png"
 
 export const METADATA = {
   title: "Portfolio | Shadab Choudhary",
   description:
     "I bridge the gap between design and development. I take responsibility to craft an aesthetic user experience using modern frontend architecture.",
-  siteUrl: "https://ayushsingh.net/",
+ 
 };
 
 export const MENULINKS = [
@@ -64,7 +73,7 @@ export const PROJECTS: IProject[] = [
   
   {
     name: "Malik Architechture",
-    image: "/projects/malik.png",
+    image: Malik.src,
     
     description: "Design From Scratch in Html, css, js, bootstrap, Animation, scrolling , Creative Layout",
     url: "https://www.malikarchitecture.com/",
@@ -72,7 +81,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Khalida Toukkani",
-    image: "khalida.png",
+    image: Khalida.src,
     
     description: "Design From Scratch in Html, css, js, bootstrap, Animation Working PhP query form  ",
     url: "https://khalidatoukkani.com/",
@@ -80,7 +89,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Vardhman Textile",
-    image: "vardhman.png",
+    image: Vardhman.src,
     
     description: "Design From Scratch in Html, css, js, bootstrap, Animation, Api Integration , Jquery Ui",
     url: "https://www.vardhman.com/",
@@ -88,7 +97,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Reverse Thought Creative Studio",
-    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740470663/arrowedge/projects/reversethought_wcnpc5.png",
+    image: Reverse.src,
     
     description: "Design From Scratch in react.js, Sass, Gsap, animation , Scrolling TypeScript Validate",
     url: "https://www.reversethought.com/",
@@ -96,7 +105,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Nifi Payment",
-    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740446878/arrowedge/projects/nifi_acobhx.png",
+    image: Nifi.src,
     
     description: "Design From Scratch in Next.js, Scss, Animation and Lottie Animation , framer Motion ",
     url: "https://nifipayments.com/",
@@ -104,7 +113,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Nera Soft",
-    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740446905/arrowedge/projects/nerasoft_ak76xv.png",
+    image: Nera.src,
     
     description: "Design From Scratch in Next.js, Scss, Animation and Lottie Animation , framer Motion ",
     url: "https://nerasoft.in/",
@@ -112,7 +121,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Aym Syntex ",
-    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740470663/arrowedge/projects/aymsyntex_xmptuj.png",
+    image:Aym.src,
     
     description: "Design from Scratch in html, css, js, Gsap, Lottie Animation and Scrolling Api Intration ",
     url: "https://www.aymsyntex.com/",
@@ -120,7 +129,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Packmato",
-    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740446877/arrowedge/projects/packmato_yorjt3.png",
+    image: Packmato.src,
     
     description: "Design From Scratch in Html, css, js, bootstrap, Animation, scrolling, Gsap ",
     url: "https://utl-shadab.github.io/packmato/",
@@ -128,13 +137,13 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Resume Builder",
-    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740472385/arrowedge/projects/Resume-Builder_tfmown_tcv9as.jpg",
+    image:Resume.src,
     description: "Design From Scratch in react.js, bootstrap , css, animate Typescript Api integration",
     url: "http://localhost:3000/",
   },
   {
     name: "Job Portal",
-    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740446908/arrowedge/projects/Job-Portal_glgjvy.png",
+    image:Job.src,
     description: "Design From Scratch in react.js, bootstrap , css, animate Typescript Api integration",
     url: "http://localhost:3000/",
   },
