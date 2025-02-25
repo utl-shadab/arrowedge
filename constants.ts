@@ -1,13 +1,13 @@
-//  import Khalida from "./src/assets/images/projects/g"
-//  import Vardhman from "./src/assets/images/projects/"
-//  import Reverse from "./src/assets/images/projects/reversethought.png"
-//  import Resume from "./src/assets/images/projects/Resume-Builder.png"
-//  import Job from "./src/assets/images/projects/Job-Portal.png"
-//  import Malik from "./src/assets/images/projects/malik.png"
-//  import Aym from "./src/assets/images/projects/aymsyntex.png"
-//  import Nera from "./src/assets/images/projects/nerasoft.png"
-//  import Nifi from "./src/assets/images/projects/nifi.png"
-//  import Packmato from "./src/assets/images/projects/packmato.png"
+ import Khalida from "@/public/khalida.png"
+ import Vardhman from "@/public/vardhman.png"
+ import Reverse from "@/public/reversethought.png"
+ import Resume from "@/public/Resume-Builder.png"
+ import Job from "@/public/Job-Portal.png"
+ import Malik from "@/public/malik.png"
+ import Aym from "@/public/aymsyntex.png"
+ import Nera from "@/public/nerasoft.png"
+ import Nifi from "@/public/nifi.png"
+ import Packmato from "@/public/packmato.png"
 
 export const METADATA = {
   title: "Portfolio | Shadab Choudhary",
