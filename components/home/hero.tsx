@@ -45,7 +45,7 @@ const HeroSection = () => {
         {/* Line 1 */}
         <h1 className="text-4xl md:text-7xl lg:text-8xl font-extrabold animate-text flex items-center">
           <Image
-            src="/social/win.png"
+            src="https://res.cloudinary.com/dynz767iy/image/upload/v1740446738/arrowedge/hero/win_wgkihq.png"
             alt="Logo"
             width={80} // Set width
             height={80} // Set height
@@ -58,7 +58,7 @@ const HeroSection = () => {
         <div className="flex items-center gap-4 animate-text">
           <h2 className="text-4xl md:text-7xl lg:text-8xl font-extrabold flex items-center">
             <Image
-              src="/social/shocked.png"
+              src="https://res.cloudinary.com/dynz767iy/image/upload/v1740446737/arrowedge/hero/shocked_ajyqtj.png"
               alt="Logo"
               width={80} // Set width
               height={80} // Set height
@@ -72,7 +72,7 @@ const HeroSection = () => {
         <h3 className="text-4xl md:text-7xl lg:text-8xl font-extrabold animate-text flex items-center">
           PRESENTATIONS{" "}
           <Image
-            src="/social/keepgoing.png"
+            src="https://res.cloudinary.com/dynz767iy/image/upload/v1740446738/arrowedge/hero/keepgoing_ueq6on.png"
             alt="Logo"
             width={80} // Set width
             height={80} // Set height

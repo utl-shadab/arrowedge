@@ -64,7 +64,7 @@ export const PROJECTS: IProject[] = [
   
   {
     name: "Malik Architechture",
-    image: "/projects/malik.png",
+    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740446911/arrowedge/projects/malik_o9rnpc.png",
     
     description: "Design From Scratch in Html, css, js, bootstrap, Animation, scrolling , Creative Layout",
     url: "https://www.malikarchitecture.com/",
@@ -72,7 +72,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Khalida Toukkani",
-    image: "/projects/khalida.png",
+    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740470665/arrowedge/projects/khalida_d4qciv.png",
     
     description: "Design From Scratch in Html, css, js, bootstrap, Animation Working PhP query form  ",
     url: "https://khalidatoukkani.com/",
@@ -80,7 +80,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Vardhman Textile",
-    image: "/projects/vardhman.png",
+    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740470665/arrowedge/projects/vardhman_rfq9nz.png",
     
     description: "Design From Scratch in Html, css, js, bootstrap, Animation, Api Integration , Jquery Ui",
     url: "https://www.vardhman.com/",
@@ -88,7 +88,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Reverse Thought Creative Studio",
-    image: "/projects/reversethought.png",
+    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740470663/arrowedge/projects/reversethought_wcnpc5.png",
     
     description: "Design From Scratch in react.js, Sass, Gsap, animation , Scrolling TypeScript Validate",
     url: "https://www.reversethought.com/",
@@ -96,7 +96,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Nifi Payment",
-    image: "/projects/nifi.png",
+    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740446878/arrowedge/projects/nifi_acobhx.png",
     
     description: "Design From Scratch in Next.js, Scss, Animation and Lottie Animation , framer Motion ",
     url: "https://nifipayments.com/",
@@ -104,7 +104,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Nera Soft",
-    image: "/projects/nerasoft.png",
+    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740446905/arrowedge/projects/nerasoft_ak76xv.png",
     
     description: "Design From Scratch in Next.js, Scss, Animation and Lottie Animation , framer Motion ",
     url: "https://nerasoft.in/",
@@ -112,7 +112,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Aym Syntex ",
-    image: "/projects/aymsyntex.png",
+    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740470663/arrowedge/projects/aymsyntex_xmptuj.png",
     
     description: "Design from Scratch in html, css, js, Gsap, Lottie Animation and Scrolling Api Intration ",
     url: "https://www.aymsyntex.com/",
@@ -120,7 +120,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Packmato",
-    image: "/projects/packmato.png",
+    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740446877/arrowedge/projects/packmato_yorjt3.png",
     
     description: "Design From Scratch in Html, css, js, bootstrap, Animation, scrolling, Gsap ",
     url: "https://utl-shadab.github.io/packmato/",
@@ -128,13 +128,13 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Resume Builder",
-    image: "/projects/Resume-Builder.png",
+    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740472385/arrowedge/projects/Resume-Builder_tfmown_tcv9as.jpg",
     description: "Design From Scratch in react.js, bootstrap , css, animate Typescript Api integration",
     url: "http://localhost:3000/",
   },
   {
     name: "Job Portal",
-    image: "/projects/Job-Portal.png",
+    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740446908/arrowedge/projects/Job-Portal_glgjvy.png",
     description: "Design From Scratch in react.js, bootstrap , css, animate Typescript Api integration",
     url: "http://localhost:3000/",
   },
@@ -189,7 +189,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     subtitle:
       "Frontend Engineering @ Core team, solving problems",
     image: "/timeline/techiosoft.png",
-    slideImage: "/timeline/techi.png",
+    slideImage: "https://res.cloudinary.com/dynz767iy/image/upload/v1740446607/arrowedge/timeline/techi_jeoo1x.png",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -207,7 +207,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     subtitle:
       "Frontend Ui Team Lead  ",
     image: "/timeline/nera.png",
-    slideImage: "/timeline/nerasoft.png",
+    slideImage: "https://res.cloudinary.com/dynz767iy/image/upload/v1740446602/arrowedge/timeline/nerasoft_paez6z.png",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -225,7 +225,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     subtitle:
       "Played a key role in building a UI framework for a job portal, focusing on reusable components and responsive design.",
     image: "/timeline/utl.png",
-    slideImage: "/timeline/teamutl.avif",
+    slideImage: "https://res.cloudinary.com/dynz767iy/image/upload/v1740446604/arrowedge/timeline/teamutl_zrig2c.avif",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -246,7 +246,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     subtitle:
       "Designed and developed frontend solutions to enhance employee engagement, productivity, and performance 🎯",
     image: "/timeline/rt-logo.svg",
-    slideImage: "/projects/reversethought.png",
+    slideImage: "https://res.cloudinary.com/dynz767iy/image/upload/v1740470663/arrowedge/projects/reversethought_wcnpc5.png",
     shouldDrawLine: true,
     alignment: Branch.RIGHT,
   },
@@ -256,7 +256,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     size: ItemSize.SMALL,
     subtitle: "Implemented frontend solutions for the user management system, enabling smooth product launches 🚀",
     image: "/timeline/logo-cotgin.png",
-    slideImage: "/timeline/cotgin.png",
+    slideImage: "https://res.cloudinary.com/dynz767iy/image/upload/v1740446909/arrowedge/projects/cotgin_rkrwx7.png",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -277,7 +277,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     subtitle:
       "Designed and developed UI/UX for multiple websites, transforming frontend frameworks and building a scalable design system.",
     image: "/timeline/persis.png",
-    slideImage: "/timeline/persistent.png",
+    slideImage: "https://res.cloudinary.com/dynz767iy/image/upload/v1740446604/arrowedge/timeline/persistent_evjau0.png",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -288,7 +288,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     subtitle:
       "First job! 🥳 Product design and development ",
     image: "/timeline/bt.png",
-    slideImage: "/timeline/bhart.png",
+    slideImage: "https://res.cloudinary.com/dynz767iy/image/upload/v1740446609/arrowedge/timeline/bhart_qfjqdv.png",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
