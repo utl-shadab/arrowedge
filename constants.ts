@@ -48,17 +48,6 @@ export const TYPED_STRINGS = [
 
 export const EMAIL = "shadab28696@gmail.com";
 
-export const SOCIAL_LINKS = {
-  linkedin: "https://www.linkedin.com/in/alphaayush/",
-  github: "https://github.com/ayush013",
-  medium: "https://alphaayush.medium.com/",
-  instagram: "https://www.instagram.com/alphaayush/",
-  facebook: "https://www.facebook.com/ayush013",
-  dribbble: "https://dribbble.com/alphaayush",
-  behance: "https://www.behance.net/alphaayush/",
-  twitter: "https://twitter.com/ayush013",
-  topmate: "https://www.topmate.io/alphaayush/",
-};
 
 export interface IProject {
   name: string;
@@ -328,4 +317,3 @@ export interface BranchNode {
   type: NodeTypes.CONVERGE | NodeTypes.DIVERGE;
 }
 
-export const GTAG = "UA-163844688-1";
