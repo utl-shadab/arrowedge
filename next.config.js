@@ -1,6 +1,7 @@
-// next.config.js
 module.exports = {
     images: {
-      domains: ['res.cloudinary.com'],
+      domains: ["arrowedge.netlify.app"],
+      unoptimized: true, // Important for Netlify deployment
     },
   };
+  

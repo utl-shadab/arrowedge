@@ -1,13 +1,13 @@
- import Khalida from "./src/assets/images/projects/khalida.png"
- import Vardhman from "./src/assets/images/projects/vardhman.png"
- import Reverse from "./src/assets/images/projects/reversethought.png"
- import Resume from "./src/assets/images/projects/Resume-Builder.png"
- import Job from "./src/assets/images/projects/Job-Portal.png"
- import Malik from "./src/assets/images/projects/malik.png"
- import Aym from "./src/assets/images/projects/aymsyntex.png"
- import Nera from "./src/assets/images/projects/nerasoft.png"
- import Nifi from "./src/assets/images/projects/nifi.png"
- import Packmato from "./src/assets/images/projects/packmato.png"
+//  import Khalida from "./src/assets/images/projects/g"
+//  import Vardhman from "./src/assets/images/projects/"
+//  import Reverse from "./src/assets/images/projects/reversethought.png"
+//  import Resume from "./src/assets/images/projects/Resume-Builder.png"
+//  import Job from "./src/assets/images/projects/Job-Portal.png"
+//  import Malik from "./src/assets/images/projects/malik.png"
+//  import Aym from "./src/assets/images/projects/aymsyntex.png"
+//  import Nera from "./src/assets/images/projects/nerasoft.png"
+//  import Nifi from "./src/assets/images/projects/nifi.png"
+//  import Packmato from "./src/assets/images/projects/packmato.png"
 
 export const METADATA = {
   title: "Portfolio | Shadab Choudhary",
@@ -73,7 +73,7 @@ export const PROJECTS: IProject[] = [
   
   {
     name: "Malik Architechture",
-    image: Malik.src,
+    image: "/malik.png",
     
     description: "Design From Scratch in Html, css, js, bootstrap, Animation, scrolling , Creative Layout",
     url: "https://www.malikarchitecture.com/",
@@ -81,7 +81,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Khalida Toukkani",
-    image: Khalida.src,
+    image: "/khalida.png",
     
     description: "Design From Scratch in Html, css, js, bootstrap, Animation Working PhP query form  ",
     url: "https://khalidatoukkani.com/",
@@ -89,7 +89,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Vardhman Textile",
-    image: Vardhman.src,
+    image: "/vardhman.png",
     
     description: "Design From Scratch in Html, css, js, bootstrap, Animation, Api Integration , Jquery Ui",
     url: "https://www.vardhman.com/",
@@ -97,7 +97,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Reverse Thought Creative Studio",
-    image: Reverse.src,
+    image: "/reversethought.png",
     
     description: "Design From Scratch in react.js, Sass, Gsap, animation , Scrolling TypeScript Validate",
     url: "https://www.reversethought.com/",
@@ -105,7 +105,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Nifi Payment",
-    image: Nifi.src,
+    image: "/nifi.png",
     
     description: "Design From Scratch in Next.js, Scss, Animation and Lottie Animation , framer Motion ",
     url: "https://nifipayments.com/",
@@ -113,7 +113,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Nera Soft",
-    image: Nera.src,
+    image:"/nerasoft.png",
     
     description: "Design From Scratch in Next.js, Scss, Animation and Lottie Animation , framer Motion ",
     url: "https://nerasoft.in/",
@@ -121,7 +121,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Aym Syntex ",
-    image:Aym.src,
+    image:"/aymsyntex.png",
     
     description: "Design from Scratch in html, css, js, Gsap, Lottie Animation and Scrolling Api Intration ",
     url: "https://www.aymsyntex.com/",
@@ -129,7 +129,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Packmato",
-    image: Packmato.src,
+    image: "/packmato.png",
     
     description: "Design From Scratch in Html, css, js, bootstrap, Animation, scrolling, Gsap ",
     url: "https://utl-shadab.github.io/packmato/",
@@ -137,13 +137,13 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Resume Builder",
-    image:Resume.src,
+    image:"/Resume-Builder.png",
     description: "Design From Scratch in react.js, bootstrap , css, animate Typescript Api integration",
     url: "http://localhost:3000/",
   },
   {
     name: "Job Portal",
-    image:Job.src,
+    image:"/Job-Portal.png",
     description: "Design From Scratch in react.js, bootstrap , css, animate Typescript Api integration",
     url: "http://localhost:3000/",
   },
