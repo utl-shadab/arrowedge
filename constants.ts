@@ -72,7 +72,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Khalida Toukkani",
-    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740470665/arrowedge/projects/khalida_d4qciv.png",
+    image: "khalida.png",
     
     description: "Design From Scratch in Html, css, js, bootstrap, Animation Working PhP query form  ",
     url: "https://khalidatoukkani.com/",
@@ -80,7 +80,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: "Vardhman Textile",
-    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740470665/arrowedge/projects/vardhman_rfq9nz.png",
+    image: "vardhman.png",
     
     description: "Design From Scratch in Html, css, js, bootstrap, Animation, Api Integration , Jquery Ui",
     url: "https://www.vardhman.com/",
