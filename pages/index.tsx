@@ -17,6 +17,7 @@ import Footer from "@/components/common/footer";
 import TimelineSection from "@/components/home/timeline";
 import AboutSection from "@/components/home/about";
 import ContactForm from "@/components/home/contact";
+import DownloadResumeButton from "@/components/home/DownloadResumeButton";
 
 const DEBOUNCE_TIME = 100;
 
@@ -67,6 +68,7 @@ export default function Home() {
       </Head>
       <Layout>
         <Header />
+        <DownloadResumeButton/>
         <ProgressIndicator />
         <Cursor isDesktop={isDesktop} />
         <main className="flex-col flex">

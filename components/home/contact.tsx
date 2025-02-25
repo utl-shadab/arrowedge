@@ -14,6 +14,7 @@ const interestsList = [
 
 const ContactForm: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -21,6 +22,7 @@ const ContactForm: React.FC = () => {
     mobile: "",
     source: "",
     budget: "",
+    message: "",  // Added message field
     interests: new Set<string>(),
   });
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
@@ -35,9 +37,16 @@ const ContactForm: React.FC = () => {
   }, []);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    
+    if (name === "mobile") {
+      const numericValue = value.replace(/\D/g, "").slice(0, 10);
+      setFormData({ ...formData, [name]: numericValue });
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
   };
 
   const toggleInterest = (interest: string) => {
@@ -55,7 +64,10 @@ const ContactForm: React.FC = () => {
     if (!formData.name) newErrors.name = "Name is required";
     if (!formData.email) newErrors.email = "Email is required";
     if (!formData.mobile) newErrors.mobile = "Mobile is required";
+    if (formData.mobile.length < 10)
+      newErrors.mobile = "Mobile must be exactly 10 digits";
     if (!formData.budget) newErrors.budget = "Budget is required";
+    if (!formData.message) newErrors.message = "Message is required";  // Validation for message
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -64,13 +76,15 @@ const ContactForm: React.FC = () => {
     e.preventDefault();
     if (!validateForm()) return;
 
+    setLoading(true);
+
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...formData,
-          interests: Array.from(formData.interests), // Convert Set to Array
+          interests: Array.from(formData.interests),
         }),
       });
 
@@ -84,6 +98,7 @@ const ContactForm: React.FC = () => {
           mobile: "",
           source: "",
           budget: "",
+          message: "",
           interests: new Set<string>(),
         });
       } else {
@@ -91,6 +106,8 @@ const ContactForm: React.FC = () => {
       }
     } catch (error) {
       toast.error("Failed to send message. Please try again.", { position: "bottom-right" });
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -114,9 +131,9 @@ const ContactForm: React.FC = () => {
           { label: "Your Name*", name: "name", type: "text" },
           { label: "Company Name", name: "company", type: "text" },
           { label: "Your E-mail*", name: "email", type: "email" },
-          { label: "Your Mobile*", name: "mobile", type: "tel" },
+          { label: "Your Mobile*", name: "mobile", type: "tel", pattern: "[0-9]{10}" },
           { label: "Your Budget*", name: "budget", type: "text" },
-        ].map(({ label, name, type }) => (
+        ].map(({ label, name, type, pattern }) => (
           <div key={name} className="w-full md:w-[48%] flex flex-col text-black">
             <label className="text-sm font-medium">{label}</label>
             <input
@@ -125,6 +142,7 @@ const ContactForm: React.FC = () => {
               name={name}
               value={formData[name as keyof typeof formData] as string}
               onChange={handleChange}
+              pattern={pattern}
               autoComplete="off"
             />
             {errors[name] && (
@@ -153,12 +171,39 @@ const ContactForm: React.FC = () => {
           </div>
         </div>
 
+        {/* Textarea Field */}
+        <div className="w-full flex flex-col text-black mt-6">
+          <label className="text-sm font-medium">Your Message*</label>
+          <textarea
+            className="border-black border-b p-2 outline-none bg-transparent text-black h-24 resize-none"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="Tell us more about your project..."
+            autoComplete="off"
+          />
+          {errors.message && (
+            <p className="text-red-600 text-xs mt-1">{errors.message}</p>
+          )}
+        </div>
+
         <div className="w-full flex justify-center mt-6">
           <button
             type="submit"
-            className="bg-red-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700 transition"
+            className="bg-red-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700 transition flex items-center"
+            disabled={loading}
           >
-            Send Message
+            {loading ? (
+              <>
+                <svg className="animate-spin h-5 w-5 mr-2 text-white" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="white" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="white" d="M4 12a8 8 0 018-8v8H4z"></path>
+                </svg>
+                Sending...
+              </>
+            ) : (
+              "Send Message"
+            )}
           </button>
         </div>
       </form>

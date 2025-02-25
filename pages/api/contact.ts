@@ -6,9 +6,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(405).json({ message: "Method Not Allowed" });
   }
 
-  const { name, company, email, mobile,  budget, interests } = req.body;
+  const { name, company, email, mobile, budget, interests, message } = req.body;
 
-  if (!name || !email || !mobile || !budget) {
+  if (!name || !email || !mobile || !budget || !message) {
     return res.status(400).json({ message: "Please fill all required fields." });
   }
 
@@ -28,11 +28,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       subject: "New Contact Form Submission",
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; background: #F8FAFD; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-        <div style="background:"#D3E3FD">
-          <h2 style="text-align: center; color: #007bff; margin-bottom: 10px;">Congratulations</h2>
-          <p style="text-align: center; font-size: 16px; color: #333;">You have a new inquiry from your website</p>
-          <hr style="border: none; height: 1px; background: #ddd; margin: 20px 0;">
+          <div style="background:#D3E3FD; padding: 10px; border-radius: 5px;">
+            <h2 style="text-align: center; color: #007bff; margin-bottom: 10px;">New Inquiry</h2>
+            <p style="text-align: center; font-size: 16px; color: #333;">You have received a new message from your website</p>
           </div>
+          <hr style="border: none; height: 1px; background: #ddd; margin: 20px 0;">
           <div style="padding: 10px 0;">
             <p><strong>Name:</strong> ${name}</p>
             <p><strong>Email:</strong> ${email}</p>
@@ -40,6 +40,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             <p><strong>Mobile:</strong> ${mobile}</p>
             <p><strong>Budget:</strong> ${budget}</p>
             <p><strong>Interests:</strong> ${interests.length > 0 ? interests.join(", ") : "N/A"}</p>
+            <p><strong>Message:</strong> ${message}</p>
           </div>
           <hr style="border: none; height: 1px; background: #ddd; margin: 20px 0;">
           <p style="text-align: center; font-size: 14px; color: #666;">This is an automated message. Please do not reply.</p>
