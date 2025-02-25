@@ -46,7 +46,7 @@ export const TYPED_STRINGS = [
   "I design and develop motion",
 ];
 
-export const EMAIL = "ayush.singh.xda@gmail.com";
+export const EMAIL = "shadab28696@gmail.com";
 
 export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/in/alphaayush/",
@@ -99,7 +99,7 @@ export const PROJECTS: IProject[] = [
     image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740446909/arrowedge/projects/cotgin_rkrwx7.png",
     
     description: "Design From Scratch in Html, css, js, bootstrap, Animation, Api Integration , Jquery Ui",
-    url: "https://www.vardhman.com/",
+    url: "https://www.cotginitsolution.com/",
     
   },
   {
