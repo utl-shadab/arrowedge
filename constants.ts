@@ -61,7 +61,7 @@ export const PROJECTS: IProject[] = [
   
   {
     name: "Malik Architechture",
-    image: "https://res.cloudinary.com/dynz767iy/image/upload/v1740446911/arrowedge/projects/malik_o9rnpc.png",
+    image: "/images/malik.png",
     
     description: "Design From Scratch in Html, css, js, bootstrap, Animation, scrolling , Creative Layout",
     url: "https://www.malikarchitecture.com/",
