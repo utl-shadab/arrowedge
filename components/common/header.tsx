@@ -1,4 +1,4 @@
- 
+
 
 import Image from "next/image";
 import { useState } from "react";
@@ -11,7 +11,7 @@ const Header = () => {
     <header className="w-full fixed top-0 py-3 select-none z-50 bg-gradient-to-b from-gray-900   to-transparent">
       <div className="flex justify-between section-container">
         <a href="#home" className="link">
-          <Image
+          <img
             src="/skills/LogoArrow.png"
             alt="Logo "
             width={120}

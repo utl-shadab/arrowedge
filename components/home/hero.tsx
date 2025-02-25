@@ -44,7 +44,7 @@ const HeroSection = () => {
       <div className="text-left mt-20">
         {/* Line 1 */}
         <h1 className="text-4xl md:text-7xl lg:text-8xl font-extrabold animate-text flex items-center">
-          <Image
+          <img
             src="/social/win.png"
             alt="Logo"
             width={80} // Set width
@@ -57,7 +57,7 @@ const HeroSection = () => {
         {/* Line 2 */}
         <div className="flex items-center gap-4 animate-text">
           <h2 className="text-4xl md:text-7xl lg:text-8xl font-extrabold flex items-center">
-            <Image
+            <img
               src="/social/shocked.png"
               alt="Logo"
               width={80} // Set width
@@ -71,11 +71,11 @@ const HeroSection = () => {
         {/* Line 3 */}
         <h3 className="text-4xl md:text-7xl lg:text-8xl font-extrabold animate-text flex items-center">
           PRESENTATIONS{" "}
-          <Image
+          <img
             src="/social/keepgoing.png"
             alt="Logo"
-            width={80} // Set width
-            height={80} // Set height
+            width={80}
+            height={80}
             className="w-12 h-12 md:w-20 md:h-20 animate-image"
           />
         </h3>

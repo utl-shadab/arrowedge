@@ -41,11 +41,11 @@ const ProjectTile = ({
 
         {/* Project Image - Fixed Size */}
         <div className="relative w-full min-h-[260px] sm:min-h-[200px] md:min-h-[220px] lg:min-h-[240px] xl:min-h-[270px] rounded-xl overflow-hidden">
-          <img
-            src={image}
-            alt={name}
-            className="transition-transform duration-500 group-hover:scale-105 "
-          />
+        <img
+        src={image}
+        alt={name}
+        className="w-full h-auto max-h-[270px] object-contain transition-transform duration-500 group-hover:scale-105"
+      />
         </div>
 
 

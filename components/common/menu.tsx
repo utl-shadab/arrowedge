@@ -1,5 +1,3 @@
- 
-
 import { Dispatch, SetStateAction } from "react";
 import { MENULINKS } from "../../constants";
 
@@ -14,21 +12,21 @@ const Menu = ({
       style={{ visibility: "hidden" }}
     >
       <div className="flex-none overflow-hidden flex items-center justify-center">
-        <div className=" opacity-0 overflow-y-auto flex flex-none justify-center items-center max-h-screen">
+        <div className="opacity-0 overflow-y-auto flex flex-none justify-center items-center max-h-screen">
           <ul
             className="list-none py-4 px-0 m-0 block max-h-screen"
             role="menu"
           >
             {MENULINKS.map((el) => (
               <li
-                className="p-0 m-6 text-7xl block"
+                className="p-0 m-4 sm:m-5 md:m-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl block"
                 key={el.name}
                 role="menuitem"
               >
                 <a
-                  className="link relative inline font-bold text-5xl duration-300 hover:no-underline"
+                  className="link relative inline font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl duration-300 hover:no-underline"
                   href={`#${el.ref}`}
-                  onClick={setmenuVisible.bind(null, false)}
+                  onClick={() => setmenuVisible(false)}
                 >
                   {el.name}
                 </a>
